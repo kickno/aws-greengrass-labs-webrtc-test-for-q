@@ -82,6 +82,11 @@ include( ${MODULE_ROOT_DIR}/tools/cmock/create_test.cmake )
 # Include build configuration for unit tests.
 add_subdirectory( unit-test )
 
+# Add Python test for EXPLANATION.md reference
+add_test(NAME ExplanationTest
+         COMMAND python3 ${CMAKE_CURRENT_SOURCE_DIR}/explanation_test.py
+         WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/..)
+
 #  ==================================== Coverage Analysis configuration ========================================
 
 # Add a target for running coverage on tests.

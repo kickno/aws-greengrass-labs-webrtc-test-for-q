@@ -2,6 +2,8 @@
 
 This is an application that runs on [AWS IoT Greengrass v2](https://docs.aws.amazon.com/greengrass/v2/developerguide/what-is-iot-greengrass.html) gateway devices as a [Greengrass Component](https://docs.aws.amazon.com/greengrass/v2/developerguide/manage-components.html).  The app receives video streams from multiple IP cameras, allowing remote viewers to watch the streams using [Amazon Kinesis Video Stream WebRTC](https://github.com/awslabs/amazon-kinesis-video-streams-webrtc-sdk-c).
 
+> **For a comprehensive explanation of this repository, its architecture, components, and how it works, please see the [EXPLANATION.md](EXPLANATION.md) file.**
+
 ## Prerequisite Setup
 
 - GreenGrassV2
